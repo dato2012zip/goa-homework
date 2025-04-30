@@ -1,0 +1,107 @@
+<!--
+<audio> თეგი გამოიყენება აუდიო ფაილების ჩასატვირთად. მასთან ერთად ვიყენებთ <source> თეგს ან src ატრიბუტს.
+მაგალითად:
+<audio controls>
+  <source src="audio.mp3" type="audio/mpeg">
+</audio>
+
+<video> თეგი გამოიყენება ვიდეოს ჩასატვირთად.
+მაგალითად:
+<video width="320" height="240" controls>
+  <source src="video.mp4" type="video/mp4">
+</video>
+-->
+
+<audio src="audio.mp3" controls></audio>
+
+<audio controls>
+    <source src="audio.mp3" type="audio/mpeg">
+    <source src="audio.ogg" type="audio/ogg">
+  </audio>
+  
+  <!DOCTYPE html>
+<html>
+<head>
+  <title>მედია გვერდი</title>
+</head>
+<body>
+  <h2>აუდიო ფაილები</h2>
+
+  <audio controls>
+    <source src="audio1.mp3" type="audio/mpeg">
+  </audio><br>
+
+  <audio controls>
+    <source src="audio2.ogg" type="audio/ogg">
+  </audio><br>
+
+  <audio controls>
+    <source src="audio3.wav" type="audio/wav">
+  </audio>
+
+  <h2>ვიდეო ფაილები</h2>
+
+  <video width="320" height="240" controls>
+    <source src="video1.mp4" type="video/mp4">
+  </video><br>
+
+  <video width="320" height="240" controls>
+    <source src="video2.ogg" type="video/ogg">
+  </video><br>
+
+  <video width="320" height="240" controls>
+    <source src="video3.webm" type="video/webm">
+  </video>
+  <!-- 4 -->
+  <table border="1">
+    <tr>
+      <th>სახელი</th>
+      <th>გვარი</th>
+    </tr>
+    <tr>
+      <td>ლუკა</td>
+      <td>გელაშვილი</td>
+    </tr>
+  </table>
+  
+  <form action="register.php" method="post">
+    <label>სახელი: <input type="text" name="fname"></label><br>
+    <label>გვარი: <input type="text" name="lname"></label><br>
+    <label>ელ.ფოსტა: <input type="email" name="email"></label><br>
+    <label>პაროლი: <input type="password" name="password"></label><br>
+    <label>დაბადების თარიღი: <input type="date" name="dob"></label><br>
+    <input type="submit" value="რეგისტრაცია">
+  </form>
+
+  <form>
+    <label>ქვეყანა:
+      <select name="country">
+        <option>საქართველო</option>
+        <option>აშშ</option>
+        <option>გერმანია</option>
+        <option>საფრანგეთი</option>
+      </select>
+    </label><br>
+  
+    <label>სქესი:
+      <select name="gender">
+        <option>კაცი</option>
+        <option>ქალი</option>
+        <option>სხვა</option>
+        <option>არ ვამხელ</option>
+      </select>
+    </label><br>
+  
+    <label>სტუდენტის სტატუსი:
+      <select name="status">
+        <option>აქტიური</option>
+        <option>აკადემიური</option>
+        <option>დამთავრებული</option>
+        <option>შეჩერებული</option>
+      </select>
+    </label>
+  </form>
+  
+
+</body>
+</html>
